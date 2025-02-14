@@ -1,0 +1,49 @@
+body{
+      background-color: #28112b;
+}
+
+.task{
+      display: flex;
+      background-color: white;
+      padding: 4px;
+      border-bottom: solid black 1px;
+      transition: box-shadow 0.2s;
+} 
+
+.done{
+      background-color: #D6A7DC;
+}
+
+.task:hover{
+      box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+}
+
+.task-table{
+      background-color: #AD50B9;
+      width: 60%;
+      margin-top: 130px;
+}
+
+button{
+      border: none;
+      font-size: 20px;
+      box-shadow: 0px 3px 5px rgba(168, 168, 168, 0.38);
+}
+
+button.circular{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      line-height:0%;
+      
+}
+
+#task-actions{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 20%;
+}
+
+
+

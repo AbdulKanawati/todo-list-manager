@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Task Manager App</title>
+      
+      <link rel="stylesheet" href="style.css">
+      
+      <!-- EXTERNAL LIBRARIES -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+      <div>
+            <!-- CENTER DIV -->
+            <div style="display: flex; justify-content: center; align-items: center;">
+                  <!-- TASKS TABLE -->
+                  <div class="task-table">
+                        <!-- HEADER -->
+                        <div style="width: 100%; text-align: center; background: #453643; color: white; padding-top: 8px; padding-bottom: 8px;">
+                              <h1 style="display: inline;">My Tasks</h1>
+                              <button id="add-btn" class="circular" style="float: right; background: white; margin-right: 10px;">
+                                    <span class="material-symbols-outlined">add_task</span>
+                              </button>
+                        </div>
+                        <!--/ HEADER /-->
+                        <!-- TASKS -->
+                         <div id="tasks" style="padding: 20px;">
+                              <!-- TASK -->
+                              <div class="task">
+                                    <!-- TASKS INFO -->
+                                    <div style="width: 70%; ">
+                                          <h2>Reading a book</h2>
+
+                                          <div>
+                                                <span class="material-symbols-outlined">calendar_month</span>
+
+                                                <span>
+                                                      10.10.2024
+                                                </span>
+                                          </div>
+                                    </div>
+
+                                    
+                                    <!--/ TASKS INFO /-->
+
+                                    <!-- TASKS ACTIONS -->
+                                    <div id="task-actions">
+                                          <button class="circular" style="background-color: rgb(114, 0, 0); color: white;">
+                                                <span class="material-symbols-outlined">delete</span>
+                                          </button>
+                                          <button class="circular" style="background-color: rgb(0, 150, 30); color: white;">
+                                                <span class="material-symbols-outlined">check</span>
+                                          </button>
+                                          <button class="circular" style="background-color: rgba(0, 16, 197 , 0.692); color: white;">
+                                                <span class="material-symbols-outlined">edit</span>
+                                          </button>
+                                    </div>
+                                    <!--/ TASKS ACTIONS /-->
+                              </div>
+                              <!--/ TASK /-->
+                         </div>
+                        <!--/ TASKS /-->
+                  </div>
+                  <!--/ TASKS TABLE /-->
+            </div>
+            <!--/ CENTER DIV /-->
+      </div>
+      <script src="todo.js"></script>
+</body>
+</html>
